@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>SQPDNet</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://seungyeon-k.github.io">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://dsqnet.github.io">
+            [T-ASE 2022] DSQNet
+          </a>
+          <a class="navbar-item" href="https://searchforgrasp.github.io">
+            [CoRL 2023] Search-for-Grasp
+          </a>
+          <a class="navbar-item" href="https://t2sqnet.github.io">
+            [CoRL 2024] T<sup>2</sup>SQNet
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          
+          <!-- Title. -->
+          <h1 class="title is-2 publication-title">SE(2)-Equivariant Pushing Dynamics Models for Tabletop Object Manipulation</h1>
+          <p class="subtitle">Conference on Robot Learning (CoRL) 2022, <b>
+            <font color="#C11B17">Oral Presentation</font>
+          </b></p>
+          
+          <!-- Authors. -->
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://seungyeon-k.github.io">Seungyeon Kim</a><sup>1</sup>,</span>
+              <span class="author-block">
+                Byeongdo Lim<sup>1</sup>,</span>            
+              <span class="author-block">
+              <a href="https://www.gabe-yhlee.com">Yonghyeon Lee</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://sites.google.com/robotics.snu.ac.kr/fcp/">Frank C. Park</a><sup>1, 2</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Seoul National University,</span>
+            <span class="author-block"><sup>2</sup>Saige Research</span>
+          </div>
+
+          <!-- Icons. -->
+          <div class="column has-text-centered">
+            <div class="publication-links">
+
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://proceedings.mlr.press/v205/kim23b/kim23b.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+
+              <!-- Supplementary Link. -->
+              <span class="link-block">
+                <a href="https://proceedings.mlr.press/v205/kim23b/kim23b-supp.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Supplementary</span>
+                </a>
+              </span>
+
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=UPD-34WVi4U"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/seungyeon-k/SQPDNet-public"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+
+            </div>
+          </div>
+          
+          <!-- Blank. -->
+          <div class="columns is-centered">
+            <div class="content">
+              <h2 class="title is-3"></h2>
+            </div>            
+          </div>
+
+          <!-- TL;DR. -->
+          <div class="columns is-centered has-text-justified interpolation-panel">
+            <div class="column is-full-width">
+              <h2 class="title is-4">
+                <font color="#808080">
+                  <p></p><p></p><p></p>
+                  TL;DR: This paper addresses learning accurate pushing dynamics models 
+                  for tabletop object manipulation, emphasizing the importance 
+                  of SE(2)-equivariance.
+                </font>
+              </h2>
+            </div>
+          </div>
+          
+          <!-- Blank. -->
+          <div class="columns is-centered">
+            <div class="content">
+              <h2 class="title is-3"></h2>
+            </div>            
+          </div>
+
+          <!-- Teaser Video. -->
+          <div class="columns is-centered">
+
+            <!-- Singulation. -->
+            <div class="column has-text-left">
+              <div class="content">
+                <h2 class="title is-3">Singulation</h2>
+                <p>
+                  Our pushing dynamics model-based approach can find a series of pushing
+                  actions that successfully perform the desired tasks (e.g., singulation
+                  which is a task to separate objects by more than a certain distance).
+                </p>
+                <video id="sd" autoplay controls muted playsinline height="100%">
+                  <source src="./assets/videos/sg.mp4"
+                          type="video/mp4">
+                </video>
+              </div>
+            </div>
+
+            <!-- Pushing for Grasping. -->
+            <div class="column has-text-left">
+              <h2 class="title is-3">Pushing for Grasping</h2>
+              <div class="columns is-centered">
+                <div class="column content">
+                  <p>
+                    Without using ad hoc objective functions, the robot realizes how to 
+                    re-configure the objects so that feasible grasp poses can be found for
+                    the target objects (e.g., a larget and flat object). 
+                  </p>
+                  <video id="sd" autoplay controls muted playsinline height="100%">
+                    <source src="./assets/videos/pg.mp4"
+                            type="video/mp4">
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            For tabletop object manipulation tasks, learning an accurate pushing
+            dynamics model, which predicts the objects’ motions when a robot pushes an
+            object, is very important. In this work, we claim that an ideal pushing dynamics 
+            model should have the SE(2)-equivariance property, i.e., if tabletop objects’
+            poses and pushing action are transformed by some same planar rigid-body transformation, 
+            then the resulting motion should also be the result of the same transformation. 
+            Existing state-of-the-art data-driven approaches do not have this equivariance 
+            property, resulting in less-than-desirable learning performances. In this
+            paper, we propose a new neural network architecture that by construction has the
+            above equivariance property. Through extensive empirical validations, we show
+            that the proposed model shows significantly improved learning performances over
+            the existing methods. Also, we verify that our pushing dynamics model can be
+            used for various downstream pushing manipulation tasks such as the object moving, 
+            singulation, and grasping in both simulation and real robot experiments.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/UPD-34WVi4U?rel=0&amp;showinfo=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>  
+      </div>
+    </div>
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- Pushing Dynamics Model. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Pushing Dynamics Model</h2>
+
+        <!-- SE(2)-Equivariant Pushing Dynamics Models. -->
+        <h3 class="title is-4">SE(2)-Equivariant Pushing Dynamics Model</h3>
+        <div class="content has-text-justified">
+          <p>
+            Suppose a pushing dynamics model is trained with an experience where a robot pushes a box object into a red arrow direction as shown in 
+            the below figure (Scene 1). Consider a new situation where the same box object is located at a different pose and the robot pushes 
+            the object in the same relative direction as shown in Scene 2. At an intuitive level, a good model should be able to easily generalize 
+            to this type of new situation, where tabletop objects are only translated or rotated along the \(z\)-axis. 
+            In more technical terms, the pushing dynamics model needs to be <b>equivariant</b> to the \(\text{SE}(2)\) transformation.
+          </p>
+        </div>
+        <div class="columns">
+          <div class="column has-text-centered">
+            <img src="./assets/images/equivariance.PNG"
+                 alt="recognition results"/>
+          </div>
+        </div>
+
+        <!-- SuperQuadric Pushing Dynamics Network. -->
+        <h3 class="title is-4">SQPDNet: SuperQuadric Pushing Dynamics Network</h3>
+        <div class="content has-text-justified">
+          <p>
+            The core idea behind making the model \(\text{SE}(2)\)-equivariant is to properly transform the coordinates of the pushing action and the 
+            objects' poses as needed. This design naturally captures the symmetry of physical systems and significantly enhances generalization performance. 
+            To apply the proposed equivariant pushing dynamics model in environments with only vision data and unseen objects, we use a recognition module 
+            capable of identifying the objects' shapes and poses. In this work, we represent 3D object shapes using a shape class called <b>superquadrics</b>.
+            Accordingly, we refer to our superquadric object representation-based pushing dynamics model as the <b>SuperQuadric Pushing Dynamics Network (SQPDNet)</b>.
+          </p>
+        </div>
+        <div class="columns">
+          <div class="column has-text-centered">
+            <img src="./assets/images/sqpdnet.PNG"
+                 alt="recognition results"/>
+          </div>
+        </div>
+   
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- Pushing Manipulation. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Pushing Manipulation</h2>
+
+        <!-- Object Manipulation with T2SQNet. -->
+        <h3 class="title is-4">Pushing Manipulation with SQPDNet</h3>
+        <div class="content has-text-justified">
+          <p>
+            Our approach can find a series of pushing actions that successfully perform the desired tasks. 
+            Notably, for the grasping tasks, without using ad hoc objective functions, the robot realizes how to re-configure the 
+            objects so that feasible grasp poses can be found for the target objects: (i) the robot pushes the large and flat object 
+            to the edge of the table and (ii) the robot pushes the surrounding objects to make the surrounded target object graspable. 
+          </p>
+        </div>
+        <div class="columns">
+          <div class="column has-text-centered">
+            <img src="./assets/images/manipulation.png"
+                 alt="manipulation"/>
+          </div>
+        </div>
+
+
+        <!-- Object Manipulation Results. -->
+        <h3 class="title is-4">Additional Pushing Manipulation Results</h3>
+        <div class="content has-text-justified">
+          <p>
+            Additional real-world pushing manipulation videos can be found below.
+          </p>
+        </div>
+
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/OLoAHhf7vk0?rel=0&amp;showinfo=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Citation. -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title is-3">Citation</h2>
+    <pre><code>
+@inproceedings{kim2023se,
+  title={SE (2)-Equivariant Pushing Dynamics Models for Tabletop Object Manipulations},
+  author={Kim, Seungyeon and Lim, Byeongdo and Lee, Yonghyeon and Park, Frank C},
+  booktitle={Conference on Robot Learning},
+  pages={427--436},
+  year={2023},
+  organization={PMLR}
+}
+    </code></pre>
+  </div>
+</section>
+
+<!-- Footer. -->
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        Website template modified from <a href="https://nerfies.github.io/">NeRFies</a>.
+      </p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
